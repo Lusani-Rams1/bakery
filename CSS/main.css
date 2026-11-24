@@ -8,3 +8,17 @@ header {
     justify-content: center;
     padding: 10px;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 5px;
+  gap: 5px;
+}
+.container div {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px;
+  font-size: 30px;
+  text-align: center;
+}
