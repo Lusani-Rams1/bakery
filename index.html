@@ -1,27 +1,385 @@
+
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 <head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>home page</title>
-    <link rel='stylesheet' href='CSS/main.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Discover freshly baked artisan bread and handcrafted pastries at Flour & Co.">
+
+    <title>Flour & Co. | Artisan Bakery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
+
 <body>
-    <header>
-        <h1>Bakery</h1>
-        <nav>
-            <ul>
-                <li><a href='index.html'>Home</a></li>
-                <li><a href='products.html'>Menu</a></li>
-                <li><a href='about.html'>About</a></li>
-                <li><a href='contact.html'>Contact</a></li>
+
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="announcement-bar">
+        Freshly baked daily — Available for collection
+    </div>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                flour & co.
+                <span>ARTISAN BAKERY</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#menu">Our Menu</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div class="nav-actions">
+
+                <a href="#menu" class="nav-btn">
+                    Explore Menu
+                </a>
+
+                <button class="menu-toggle"
+                        id="menuToggle"
+                        aria-label="Open navigation"
+                        aria-controls="navLinks"
+                        aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
         </nav>
     </header>
 
-    <div class="container">
-        <div>1</div>
-    </div>
-    
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-content container">
+
+                <span class="eyebrow">
+                    HANDCRAFTED. FRESH. LOCAL.
+                </span>
+
+                <h1>
+                    Good bread.<br>
+                    <em>Better mornings.</em>
+                </h1>
+
+                <p>
+                    Discover the simple joy of freshly baked artisan
+                    bread and handcrafted pastries, made with care
+                    and quality ingredients.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">
+                        Explore Our Menu
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#about" class="btn btn-outline">
+                        Our Story
+                    </a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- BAKERY VALUES -->
+        <section class="bakery-values">
+
+            <div class="container values-grid">
+
+                <div class="value-item">
+                    <i class="fa-solid fa-wheat-awn"></i>
+                    <span>Quality Ingredients</span>
+                </div>
+
+                <div class="value-item">
+                    <i class="fa-regular fa-heart"></i>
+                    <span>Handcrafted with Care</span>
+                </div>
+
+                <div class="value-item">
+                    <i class="fa-regular fa-sun"></i>
+                    <span>Freshly Baked Daily</span>
+                </div>
+
+                <div class="value-item">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span>Local Collection</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PRODUCT CATEGORIES -->
+        <section class="section categories" id="menu">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">EXPLORE OUR BAKERY</span>
+                    <h2>Fresh from the oven.</h2>
+                    <p>Find something delicious for every moment.</p>
+                </div>
+
+                <div class="category-grid">
+
+                    <a href="#featured" class="category-card"
+                       data-category="bread">
+
+                        <img src="assets/images/bread.jpg"
+                             alt="Freshly baked artisan bread"
+                             loading="lazy">
+
+                        <div class="category-content">
+                            <h3>Artisan Bread</h3>
+                            <span>
+                                Explore
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+
+                    </a>
+
+                    <a href="#featured" class="category-card"
+                       data-category="pastries">
+
+                        <img src="assets/images/pastries.jpg"
+                             alt="Freshly baked pastries"
+                             loading="lazy">
+
+                        <div class="category-content">
+                            <h3>Pastries</h3>
+                            <span>
+                                Explore
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+
+                    </a>
+
+                    <a href="#featured" class="category-card"
+                       data-category="sweet">
+
+                        <img src="assets/images/sweet-treats.jpg"
+                             alt="Sweet baked treats"
+                             loading="lazy">
+
+                        <div class="category-content">
+                            <h3>Sweet Treats</h3>
+                            <span>
+                                Explore
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FEATURED PRODUCTS -->
+        <section class="section featured" id="featured">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">BAKERY FAVOURITES</span>
+                    <h2>A little something for everyone.</h2>
+                    <p>Discover our selection of freshly baked favourites.</p>
+                </div>
+
+                <div class="product-filters">
+
+                    <button class="filter-btn active"
+                            data-filter="all">All</button>
+
+                    <button class="filter-btn"
+                            data-filter="bread">Bread</button>
+
+                    <button class="filter-btn"
+                            data-filter="pastries">Pastries</button>
+
+                    <button class="filter-btn"
+                            data-filter="sweet">Sweet Treats</button>
+
+                </div>
+
+                <div class="product-grid" id="productGrid">
+                    <!-- Products generated by JavaScript -->
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section class="about-section" id="about">
+
+            <div class="about-image">
+                <img src="assets/images/bakery.jpg"
+                     alt="Baker preparing fresh bread"
+                     loading="lazy">
+            </div>
+
+            <div class="about-content">
+
+                <span class="eyebrow">OUR STORY</span>
+
+                <h2>
+                    Made with care.<br>
+                    <em>Shared with love.</em>
+                </h2>
+
+                <p>
+                    We believe that good food brings people together.
+                    From our artisan bread to our handcrafted pastries,
+                    every bake celebrates the simple pleasure of
+                    freshly made food.
+                </p>
+
+                <p>
+                    Our passion is creating delicious moments,
+                    one loaf and one pastry at a time.
+                </p>
+
+                <a href="#contact" class="btn btn-dark">
+                    Get to Know Us
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- COLLECTION SECTION -->
+        <section class="section collection-section" id="collection">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="eyebrow">VISIT OUR BAKERY</span>
+                    <h2>Freshly baked. Ready to collect.</h2>
+                    <p>
+                        Pick up your favourite bread and pastries
+                        directly from our bakery.
+                    </p>
+                </div>
+
+                <div class="collection-grid">
+
+                    <div class="collection-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Find Us</h3>
+                        <p>Collection address coming soon.</p>
+                    </div>
+
+                    <div class="collection-card">
+                        <i class="fa-regular fa-clock"></i>
+                        <h3>Opening Hours</h3>
+                        <p>Opening hours to be confirmed.</p>
+                    </div>
+
+                    <div class="collection-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Get in Touch</h3>
+                        <p>Contact details coming soon.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+                    flour & co.
+                    <span>ARTISAN BAKERY</span>
+                </a>
+
+                <p>
+                    Handcrafted bread and pastries.
+                    Made with care, shared with love.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="index.html">Home</a>
+                <a href="#menu">Our Menu</a>
+                <a href="#about">Our Story</a>
+                <a href="#collection">Collection</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Contact</h4>
+
+                <p>Address to be confirmed</p>
+                <p>Email to be confirmed</p>
+                <p>Phone to be confirmed</p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Follow Us</h4>
+
+                <p>Social media links coming soon.</p>
+
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+
+            <p>
+                &copy; <span id="year"></span> Flour & Co.
+                All rights reserved.
+            </p>
+
+            <p>Designed by Lusani Digital</p>
+
+        </div>
+
+    </footer>
+
 </body>
 </html>
