@@ -165,11 +165,13 @@ if (menuToggle && navLinks) {
 }
 
 // FOOTER YEAR// 
-const year = document.getElementById("year");
+const yearElement = document.getElementById("year");
 
-if (year) {
-    year.textContent = new Date().getFullYear();
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
 }
 
 // INITIALISE HOMEPAGE// 
-selectCategory("all");
+if (document.getElementById("productGrid")) {
+    selectCategory("all");
+}

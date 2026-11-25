@@ -1,0 +1,582 @@
+/* COLLECTION HERO */
+.collection-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 430px;
+    padding: 80px 20px;
+
+    background: #eae3d7;
+    color: #211c18;
+    text-align: center;
+    overflow: hidden;
+}
+
+.collection-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 850px;
+}
+
+.collection-hero .eyebrow {
+    display: block;
+    color: #626b50;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.collection-hero h1 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(55px, 8vw, 100px);
+    font-weight: 500;
+    line-height: 0.95;
+    letter-spacing: -2px;
+    margin-bottom: 25px;
+}
+
+.collection-hero h1 em {
+    font-weight: 400;
+}
+
+.collection-hero p {
+    color: #756e65;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.collection-divider {
+    width: 60px;
+    height: 2px;
+    background: #b88b58;
+    margin: 30px auto 0;
+}
+
+.collection-hero::before,
+.collection-hero::after {
+    content: "";
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    border: 1px solid rgba(184, 139, 88, 0.2);
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.collection-hero::before {
+    top: -200px;
+    left: -100px;
+}
+
+.collection-hero::after {
+    bottom: -200px;
+    right: -100px;
+}
+
+/* COLLECTION PROCESS*/
+.collection-process {
+    background: #f6f2e9;
+    padding: 90px 0;
+}
+
+.collection-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.collection-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 45px 30px;
+
+    background: #ffffff;
+    border: 1px solid #ded8cd;
+
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.collection-step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(33, 28, 24, 0.06);
+}
+
+.step-number {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #b88b58;
+    margin-bottom: 25px;
+}
+
+.collection-step > i {
+    font-size: 35px;
+    color: #626b50;
+    margin-bottom: 25px;
+}
+
+.collection-step h3 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.collection-step p {
+    color: #756e65;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.step-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #626b50;
+    font-size: 12px;
+    font-weight: 600;
+
+    margin-top: auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #626b50;
+}
+
+.step-link i {
+    font-size: 11px;
+}
+
+/* VISIT OUR BAKERY*/
+.visit-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background: #626b50;
+    scroll-margin-top: 100px;
+}
+
+.visit-image {
+    overflow: hidden;
+}
+
+.visit-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 650px;
+    object-fit: cover;
+}
+
+.visit-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: clamp(35px, 6vw, 90px);
+
+    color: #ffffff;
+}
+
+.visit-content .eyebrow {
+    color: #e2d8bd;
+    margin-bottom: 20px;
+}
+
+.visit-content h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(45px, 6vw, 80px);
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.visit-content h2 em {
+    font-weight: 400;
+}
+
+.visit-content > p {
+    color: #f0eee6;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 30px;
+}
+
+/* COLLECTION ADDRESS*/
+.visit-address {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    width: 100%;
+    padding: 25px 0;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.visit-address > i {
+    font-size: 22px;
+    color: #e2d8bd;
+}
+
+.visit-address h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.visit-address p {
+    font-size: 13px;
+    color: #f0eee6;
+    line-height: 1.7;
+}
+
+/* OPENING HOURS */
+.opening-hours {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.opening-hours h3 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.opening-hours h3 i {
+    color: #e2d8bd;
+}
+
+.hours-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    padding: 13px 0;
+
+    font-size: 13px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hours-row span:last-child {
+    color: #e2d8bd;
+    text-align: right;
+}
+
+.visit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    width: 100%;
+    padding: 16px 25px;
+    margin-top: 30px;
+
+    border: 1px solid #ffffff;
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.visit-btn:hover {
+    background: #ffffff;
+    color: #626b50;
+}
+
+/* COLLECTION INFORMATION */
+.collection-information {
+    padding: 90px 0;
+    background: #f6f2e9;
+}
+
+.collection-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.collection-info-card {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.collection-info-card i {
+    font-size: 30px;
+    color: #626b50;
+    margin-bottom: 20px;
+}
+
+.collection-info-card h3 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.collection-info-card p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #756e65;
+}
+
+/* FREQUENTLY ASKED QUESTIONS */
+.collection-faq {
+    background: #ede8de;
+    padding: 90px 0;
+}
+
+.faq-list {
+    max-width: 850px;
+    margin: 0 auto;
+    border-top: 1px solid #d8d1c5;
+}
+
+.faq-list details {
+    border-bottom: 1px solid #d8d1c5;
+}
+
+.faq-list summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 25px 0;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: #211c18;
+
+    list-style: none;
+    cursor: pointer;
+}
+
+.faq-list summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-list summary::after {
+    content: "+";
+
+    color: #626b50;
+    font-size: 24px;
+    font-weight: 400;
+    flex-shrink: 0;
+}
+
+.faq-list details[open] summary::after {
+    content: "−";
+}
+
+.faq-list details p {
+    padding: 0 30px 25px 0;
+
+    font-size: 14px;
+    line-height: 1.9;
+    color: #756e65;
+}
+
+/* CALL TO ACTION */
+.collection-cta {
+    padding: 90px 20px;
+    background: #eae3d7;
+    text-align: center;
+}
+
+.collection-cta h2 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.collection-cta p {
+    color: #756e65;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.collection-cta-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin-top: 30px;
+}
+
+.collection-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 16px 28px;
+
+    border: 1px solid #211c18;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.collection-action.primary {
+    background: #211c18;
+    color: #ffffff;
+}
+
+.collection-action.primary:hover {
+    background: #626b50;
+    border-color: #626b50;
+}
+
+.collection-action.secondary {
+    color: #211c18;
+}
+
+.collection-action.secondary:hover {
+    background: #211c18;
+    color: #ffffff;
+}
+
+/* TABLET RESPONSIVENESS */
+@media (max-width: 1024px) {
+
+    .collection-steps {
+        gap: 15px;
+    }
+
+    .collection-step {
+        padding: 30px 20px;
+    }
+
+    .collection-step h3 {
+        font-size: 27px;
+    }
+
+    .visit-content {
+        padding: 40px;
+    }
+
+    .collection-info-grid {
+        gap: 15px;
+    }
+
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+    .collection-hero {
+        min-height: 330px;
+        padding: 60px 20px;
+    }
+
+    .collection-hero h1 {
+        font-size: clamp(42px, 9vw, 60px);
+        letter-spacing: -1px;
+    }
+
+    .collection-hero .eyebrow {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .collection-hero p {
+        font-size: 13px;
+    }
+
+    .collection-process,
+    .collection-information,
+    .collection-faq {
+        padding: 60px 0;
+    }
+
+    .collection-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-step {
+        padding: 35px 25px;
+    }
+
+    .visit-section {
+        grid-template-columns: 1fr;
+    }
+
+    .visit-image img {
+        height: 350px;
+        min-height: 0;
+    }
+
+    .visit-content {
+        padding: 45px 6%;
+    }
+
+    .hours-row {
+        font-size: 12px;
+    }
+
+    .collection-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .collection-info-card {
+        padding: 20px;
+    }
+
+    .faq-list summary {
+        font-size: 14px;
+        padding: 20px 0;
+    }
+
+    .faq-list details p {
+        font-size: 13px;
+    }
+
+    .collection-cta {
+        padding: 60px 20px;
+    }
+
+    .collection-cta-actions {
+        flex-direction: column;
+        max-width: 300px;
+        margin-inline: auto;
+    }
+
+}
+
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+
+    .collection-step,
+    .visit-btn,
+    .collection-action {
+        transition: none;
+    }
+
+}
