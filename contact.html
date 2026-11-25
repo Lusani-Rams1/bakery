@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Contact Us | Flour & Co.</title>
+
+    <meta name="description"
+        content="Contact Flour & Co. for product enquiries, collection information and special occasions.">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                flour & co.
+                <span>SA BAKERY</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Our Menu</a></li>
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="collection.html">Collection</a></li>
+
+                <li>
+                    <a href="contact.html" class="active" aria-current="page">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-controls="navLinks"
+                aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- CONTACT HERO -->
+        <section class="contact-hero">
+
+            <div class="container contact-hero-content">
+
+                <span class="eyebrow">
+                    WE'D LOVE TO HEAR FROM YOU
+                </span>
+
+                <h1>
+                    Let's talk<br>
+                    <em>something delicious.</em>
+                </h1>
+
+                <p>
+                    Questions, special occasions
+                    or just a little hello.
+                </p>
+
+                <div class="contact-divider"></div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section">
+
+            <div class="container contact-grid">
+
+                <!-- CONTACT INFORMATION -->
+                <aside class="contact-information">
+
+                    <span class="eyebrow">
+                        GET IN TOUCH
+                    </span>
+
+                    <h2>We're here to help.</h2>
+
+                    <p class="contact-intro">
+                        Have something in mind?
+                        We'd love to hear from you.
+                    </p>
+
+                    <div class="contact-method">
+
+                        <div class="contact-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+
+                        <div>
+                            <h3>Email Us</h3>
+                            <p id="businessEmail">
+                                Email to be confirmed
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-method">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+
+                        <div>
+                            <h3>Call Us</h3>
+                            <p id="businessPhone">
+                                Number to be confirmed
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-method">
+
+                        <div class="contact-icon">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+
+                        <div>
+                            <h3>WhatsApp</h3>
+
+                            <p id="businessWhatsapp">
+                                <a href="https://wa.me/27XXXXXXXXX" target="_blank" rel="noopener noreferrer">
+                                    Chat with us on WhatsApp
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-method">
+
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+
+                        <div>
+                            <h3>Visit Us</h3>
+                            <p id="businessAddress">
+                                Address to be confirmed
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- SOCIAL MEDIA -->
+                    <div class="contact-socials">
+
+                        <h3>Follow Our Journey</h3>
+
+                        <p>Social media links coming soon.</p>
+
+                    </div>
+
+                </aside>
+
+                <!-- CONTACT FORM -->
+                <div class="contact-form-wrapper">
+
+                    <span class="eyebrow">
+                        SEND AN ENQUIRY
+                    </span>
+
+                    <h2>Send us a message.</h2>
+
+                    <p class="form-intro">
+                        Fill in your details and tell us
+                        how we can help you.
+                    </p>
+
+                    <form id="contactForm" novalidate>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label for="fullName">
+                                    Full Name *
+                                </label>
+
+                                <input type="text" id="fullName" name="fullName" placeholder="Your full name"
+                                    autocomplete="name" maxlength="150" required>
+
+                                <small class="field-error" id="fullNameError" aria-live="polite">
+                                </small>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address *
+                                </label>
+
+                                <input type="email" id="email" name="email" placeholder="Your email address"
+                                    autocomplete="email" maxlength="255" required>
+
+                                <small class="field-error" id="emailError" aria-live="polite">
+                                </small>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="phone">
+                                Phone Number (Optional)
+                            </label>
+
+                            <input type="tel" id="phone" name="phone" placeholder="Your phone number" autocomplete="tel"
+                                maxlength="25">
+
+                            <small class="field-error" id="phoneError" aria-live="polite">
+                            </small>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="subject">
+                                Enquiry Type *
+                            </label>
+
+                            <select id="subject" name="subject" required>
+
+                                <option value="">
+                                    Select an enquiry type
+                                </option>
+
+                                <option value="General Enquiry">
+                                    General Enquiry
+                                </option>
+
+                                <option value="Product Enquiry">
+                                    Product Enquiry
+                                </option>
+
+                                <option value="Collection Enquiry">
+                                    Collection Enquiry
+                                </option>
+
+                                <option value="Bulk Order Enquiry">
+                                    Bulk Order Enquiry
+                                </option>
+
+                                <option value="Ingredients and Allergens">
+                                    Ingredients and Allergens
+                                </option>
+
+                                <option value="Feedback">
+                                    Feedback
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                            <small class="field-error" id="subjectError" aria-live="polite">
+                            </small>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="message">
+                                Your Message *
+                            </label>
+
+                            <textarea id="message" name="message" rows="6" maxlength="1000"
+                                placeholder="How can we help you?" required></textarea>
+
+                            <div class="message-meta">
+
+                                <small class="field-error" id="messageError" aria-live="polite">
+                                </small>
+
+                                <span id="characterCount">
+                                    0 / 1000
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <!-- PRIVACY NOTICE -->
+                        <p class="privacy-notice">
+
+                            Your contact details will be used
+                            to respond to your enquiry.
+
+                        </p>
+
+                        <!-- SUBMIT BUTTON -->
+                        <button type="submit" class="contact-submit" id="submitBtn">
+
+                            <span>Send Message</span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                        <!-- FORM STATUS -->
+                        <div id="formStatus" class="form-status" role="status" aria-live="polite" hidden>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- COLLECTION CTA -->
+        <section class="contact-cta">
+
+            <div class="container">
+
+                <span class="eyebrow">
+                    PLANNING A VISIT?
+                </span>
+
+                <h2>Come say hello.</h2>
+
+                <p>
+                    Find our collection information
+                    and opening hours.
+                </p>
+
+                <a href="collection.html" class="contact-cta-btn">
+
+                    Collection Information
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+                    flour & co.
+                    <span>SA BAKERY</span>
+                </a>
+
+                <p>
+                    Handcrafted bread and pastries.
+                    Made with care, shared with love.
+                </p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Explore</h4>
+
+                <a href="index.html">Home</a>
+                <a href="menu.html">Our Menu</a>
+                <a href="about.html">Our Story</a>
+                <a href="collection.html">Collection</a>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Contact</h4>
+
+                <p>Address to be confirmed</p>
+                <p>Email to be confirmed</p>
+                <p>Phone to be confirmed</p>
+
+            </div>
+
+            <div class="footer-column">
+
+                <h4>Follow Us</h4>
+
+                <p>Social media links coming soon.</p>
+
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+
+            <p>
+                &copy; <span id="year"></span>
+                Flour & Co. All rights reserved.
+            </p>
+
+            <p>Designed by Lusani Digital</p>
+
+        </div>
+
+    </footer>
+
+    <script src="JS/products.js" defer></script>
+    <script src="JS/home.js" defer></script>
+    <script src="JS/contact.js" defer></script>
+
+</body>
+
+</html>
