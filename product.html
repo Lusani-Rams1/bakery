@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Product Details | Flour & Co.</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/product.css">
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                flour & co.
+                <span>SA BAKERY</span>
+            </a>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li><a href="index.html">Home</a></li>
+
+                <li>
+                    <a href="menu.html" class="active">
+                        Our Menu
+                    </a>
+                </li>
+
+                <li><a href="about.html">Our Story</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Open navigation"
+                    aria-controls="navLinks"
+                    aria-expanded="false">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </nav>
+
+    </header>
+
+    <main class="product-page container">
+
+        <!-- PRODUCT NOT FOUND -->
+        <section class="product-not-found"
+                 id="productNotFound"
+                 hidden>
+
+            <h1>Product not found.</h1>
+
+            <p>The product you are looking for is unavailable.</p>
+
+            <a href="menu.html" class="collection-btn">
+                Back to Our Menu
+            </a>
+
+        </section>
+
+        <div id="productContent" hidden>
+
+            <!-- BREADCRUMB -->
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+
+                <a href="index.html">Home</a>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <a href="menu.html">Our Menu</a>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <span id="breadcrumbProduct"></span>
+
+            </nav>
+
+            <!-- PRODUCT DETAILS -->
+            <section class="product-details">
+
+                <div class="product-gallery">
+
+                    <img id="productImage"
+                         alt="">
+
+                </div>
+
+                <div class="product-summary">
+
+                    <span class="product-category"
+                          id="productCategory">
+                    </span>
+
+                    <h1 id="productName"></h1>
+
+                    <p class="detail-price"
+                       id="productPrice"
+                       aria-live="polite">
+                    </p>
+
+                    <div class="product-availability">
+
+                        <span class="status-dot"
+                              id="statusDot">
+                        </span>
+
+                        <span id="productAvailability"></span>
+
+                    </div>
+
+                    <p class="product-description"
+                       id="productDescription">
+                    </p>
+
+                    <!-- PRODUCT VARIANTS -->
+                    <fieldset class="variant-section">
+
+                        <legend>Choose an option</legend>
+
+                        <div class="variant-options"
+                             id="variantOptions">
+                        </div>
+
+                    </fieldset>
+
+                    <!-- COLLECTION -->
+                    <a href="collection.html"
+                       class="collection-btn">
+
+                        Collection Information
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                    <div class="collection-note">
+
+                        <i class="fa-solid fa-basket-shopping"></i>
+
+                        <span>Available for local collection</span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ADDITIONAL INFORMATION -->
+            <section class="additional-info">
+
+                <details open>
+
+                    <summary>Product Description</summary>
+
+                    <p id="fullDescription"></p>
+
+                </details>
+
+                <details>
+
+                    <summary>Ingredients & Allergens</summary>
+
+                    <div class="information-content">
+
+                        <h4>Ingredients</h4>
+
+                        <p id="productIngredients"></p>
+
+                        <h4>Allergens</h4>
+
+                        <p id="productAllergens"></p>
+
+                    </div>
+
+                </details>
+
+                <details>
+
+                    <summary>Collection Information</summary>
+
+                    <p>
+                        Products are available for collection
+                        from our bakery. Please contact us
+                        to confirm availability before visiting.
+                    </p>
+
+                </details>
+
+            </section>
+
+            <!-- RELATED PRODUCTS -->
+            <section class="related-section">
+
+                <div class="section-heading">
+
+                    <span class="eyebrow">
+                        YOU MAY ALSO LIKE
+                    </span>
+
+                    <h2>More from our bakery.</h2>
+
+                    <p>Discover more freshly baked favourites.</p>
+
+                </div>
+
+                <div class="related-grid"
+                     id="relatedProducts">
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="JS/products.js" defer></script>
+    <script src="JS/main.js" defer></script>
+    <script src="JS/product.js" defer></script>
+
+</body>
+
+</html>
